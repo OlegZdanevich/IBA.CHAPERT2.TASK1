@@ -5,8 +5,8 @@ import java.util.Map;
 import java.util.TreeMap;
 
 public class MatrixSort {
-    double[][] matrix = null;
-    int size = 0;
+    private double[][] matrix = null;
+    private int size = 0;
 
     MatrixSort(int size) {
         try {
