@@ -1,6 +1,6 @@
 package com.company;
 
-public class LineAndElement implements Comparable<LineAndElement>
+public class LineAndElement
 {
     private double element;
     private double[] elements=null;
@@ -17,14 +17,5 @@ public class LineAndElement implements Comparable<LineAndElement>
     public double[] getElements() {
         return elements;
     }
-    @Override
-    public int compareTo(LineAndElement p){
 
-        if(element> p.getElement())
-            return 1;
-        else if(element< p.getElement())
-            return -1;
-        else
-            return 0;
-    }
 }
