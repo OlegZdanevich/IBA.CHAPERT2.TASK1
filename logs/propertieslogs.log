@@ -1,0 +1,4 @@
+[ERROR] 2017-11-17 17:19:38.411 [main] Main - Object should be initalized
+Trace: 
+com.company.Run.Main.main(Main.java:34)
+

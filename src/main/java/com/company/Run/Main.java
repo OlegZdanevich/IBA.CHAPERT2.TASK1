@@ -28,6 +28,7 @@ public class Main {
 
             System.out.println("After sort:");
             System.out.println(matrix);
+
         }
         catch (NumberFormatException exception)
         {
@@ -38,6 +39,16 @@ public class Main {
                 trace.append(info[i].toString() + "\n");
             }
             log.error("You should enter integer number" + "\nTrace: \n" + trace);
+        }
+
+        catch (NullPointerException exception) {
+            StackTraceElement[] info = exception.getStackTrace();
+            StringBuilder trace = new StringBuilder("");
+
+            for (int i = info.length - 1; i >= 0; i--) {
+                trace.append(info[i].toString() + "\n");
+            }
+            log.error("Object should be initalized" + "\nTrace: \n" + trace);
         }
 
     }

@@ -45,7 +45,6 @@ public class MatrixSort {
 
     public void sort(int k) {
         try {
-            if (matrix == null) throw new NullPointerException("Matrix should be initialized");
             if (k < 0) throw new IllegalArgumentException("K should be greater then zero");
             if (k >= size) throw new IllegalArgumentException("Size shouldn't be greater then number of columns");
 
@@ -73,43 +72,23 @@ public class MatrixSort {
             }
             log.error(exception.getMessage() + "\nTrace: \n" + trace);
 
-        } catch (NullPointerException exception) {
-            StackTraceElement[] info = exception.getStackTrace();
-            StringBuilder trace = new StringBuilder("");
-
-            for (int i = info.length - 1; i >= 0; i--) {
-                trace.append(info[i].toString() + "\n");
-            }
-            log.error(exception.getMessage() + "\nTrace: \n" + trace);
         }
     }
 
     @Override
     public String toString() {
 
-        try {
-            if (matrix == null) throw new NullPointerException("Matrix should be initialized");
+        StringBuilder toReturn = new StringBuilder("");
 
-            StringBuilder toReturn = new StringBuilder("");
-
-            for (int i = 0; i < size; i++) {
-                for (int k = 0; k < size; k++) {
-                    toReturn.append(matrix[i][k] + ", ");
-                }
-                toReturn.append("\n");
+        for (int i = 0; i < size; i++) {
+            for (int k = 0; k < size; k++) {
+                toReturn.append(matrix[i][k] + ", ");
             }
-
-            return toReturn.toString();
-        } catch (NullPointerException exception) {
-            StackTraceElement[] info = exception.getStackTrace();
-            StringBuilder trace = new StringBuilder("");
-
-            for (int i = info.length - 1; i >= 0; i--) {
-                trace.append(info[i].toString() + "\n");
-            }
-            log.error(exception.getMessage() + "\nTrace: \n" + trace);
-            return "null";
+            toReturn.append("\n");
         }
+
+        return toReturn.toString();
+
 
     }
 
