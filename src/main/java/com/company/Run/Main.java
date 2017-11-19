@@ -12,9 +12,9 @@ public class Main {
 
         try {
             System.out.print("Enter size: ");
-            int n = Integer.parseInt(input.next());
+            int size = Integer.parseInt(input.next());
 
-            MatrixSort matrix = new MatrixSort(n);
+            MatrixSort matrix = new MatrixSort(size);
 
             System.out.println("Before sort:");
             System.out.println(matrix);
