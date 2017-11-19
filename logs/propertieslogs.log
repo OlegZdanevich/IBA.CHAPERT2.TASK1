@@ -5,10 +5,17 @@ com.company.Run.Main.main(Main.java:34)
 [ERROR] 2017-11-18 20:21:42.499 [main] Exceptions - Size should be greater then zero
 Trace: 
 com.company.Run.Main.main(Main.java:17)
-com.company.MatrixSort.MatrixSort.<init>(MatrixSort.java:20)
+com.company.Logic.MatrixSort.MatrixSort.<init>(MatrixSort.java:20)
 
 [ERROR] 2017-11-18 20:21:48.667 [main] Exceptions - K should be greater then zero
 Trace: 
 com.company.Run.Main.main(Main.java:25)
-com.company.MatrixSort.MatrixSort.sort(MatrixSort.java:40)
+com.company.Logic.MatrixSort.MatrixSort.sort(MatrixSort.java:40)
+
+[ERROR] 2017-11-19 23:34:02.159 [main] Exceptions - You should enter integer number
+Trace: 
+com.company.Run.Main.main(Main.java:15)
+java.base/java.lang.Integer.parseInt(Integer.java:770)
+java.base/java.lang.Integer.parseInt(Integer.java:652)
+java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
 
